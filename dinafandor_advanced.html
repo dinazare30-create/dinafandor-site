@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinafandor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d4edda;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1b4332;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #95d5b2;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s forwards;
+    }
+    section:nth-child(odd) {
+      background-color: #d4edda;
+    }
+    section:nth-child(even) {
+      background-color: #f0fdf4;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #1b4332;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    img {
+      width: 200px;
+      margin: 20px 0;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#about">معرفی</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Dinafandor</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Fantasy Computer">
+    <p>Welcome to my website</p>
+    <p>به وب‌سایت من خوش آمدید</p>
+  </section>
+
+  <section id="about">
+    <h1>About Me | درباره من</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="About Icon">
+    <p>Hello! I'm Dinafandor, passionate about technology, computer science, and creating awesome projects.</p>
+    <p>سلام! من دینافاندور هستم، علاقه‌مند به فناوری، علوم کامپیوتر و ساخت پروژه‌های شگفت‌انگیز.</p>
+  </section>
+
+  <section id="contact">
+    <h1>Contact | تماس</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Contact Icon">
+    <p>Email: example@example.com</p>
+    <p>ایمیل: example@example.com</p>
+  </section>
+</body>
+</html>
